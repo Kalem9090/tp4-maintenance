@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: todo-app
+  namespace: etudiant20-ns
 spec:
- 
   replicas: 2
   selector:
     matchLabels:
@@ -15,7 +15,6 @@ spec:
     spec:
       containers:
       - name: api
-
         image: ghcr.io/kalem9090/tp4-maintenance:latest
         ports:
         - containerPort: 8080

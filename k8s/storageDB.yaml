@@ -2,6 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mariadb-pvc
+  namespace: etudiant20-ns
 spec:
   accessModes:
     - ReadWriteOnce
